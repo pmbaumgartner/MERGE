@@ -17,7 +17,8 @@ from LL_Manager import *
 from Bigram_Updater import *
 from Frequency_Updater import *
 
-
+NTword = namedtuple('NTword', 'wordstr position')             # (word,0)
+NTlexeme = namedtuple('NTlexeme','lex token_index')
 
 
 #corpus_dir_path = "/Users/alexanderwahl/Documents/Corpora/Combined_corpus/"
