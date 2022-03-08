@@ -30,7 +30,7 @@ from MERGE_Main import *
 3. Instantiate the top-level class. Note that you must pass the directory path where the corpus files are located. Note that I have provided a test corpus to use entitled “combined corpus.” This corpus is a combination of the Santa Barbara Corpus of Spoken American English and the spoken component of the ICE Canada corpus (see below for references).
 
 ```python
-i = ModelRunner(“/Users/JohnDoe/Documents/Corpora/TestCorpus/”)
+i = ModelRunner("/Users/JohnDoe/Documents/Corpora/TestCorpus/")
 ```
 
 4. You must then set the free parameters. These include the max gap size, measured in words, that can intervene between 2 words forming a bigram, as well as the number of iterations that the program should run for.
