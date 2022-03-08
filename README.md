@@ -21,25 +21,29 @@ The program requires that you have the following packages installed: numpy, pand
 
 1. To run the program, cd to the directory in which you’ve placed the program files, then start python.
 
-
 2. Next, you must import everything from the main module:
 
+```python
 from MERGE_Main import *
-
+```
 
 3. Instantiate the top-level class. Note that you must pass the directory path where the corpus files are located. Note that I have provided a test corpus to use entitled “combined corpus.” This corpus is a combination of the Santa Barbara Corpus of Spoken American English and the spoken component of the ICE Canada corpus (see below for references).
 
+```python
 i = ModelRunner(“/Users/JohnDoe/Documents/Corpora/TestCorpus/”)
-
+```
 
 4. You must then set the free parameters. These include the max gap size, measured in words, that can intervene between 2 words forming a bigram, as well as the number of iterations that the program should run for.
 
+```python
 i.set_params(gapsize=1, iteration_count=10000):
-
+```
 
 5. Finally, you can run the program. Output will print to screen. (note that on a low-powered laptop the program may take several hours or days to run. If you have access to a server cluster, I recommend using this instead. The program has been tested on corpora up to 10 million words; this was quite memory intensive and indeed necessitated use of a server cluster. A more computationally efficient implementation is in the works.)
 
+```python
 i.run()
+```
 
 
 
