@@ -23,7 +23,7 @@ class LogLikelihoodManager(object):
         self.ll_indexer={}
 
         for tablenum,table in self.all_tables:
-            #print "tablenum:",tablenum
+            #print("tablenum:",tablenum)
             self.tablenum = tablenum
             self.table = table
             self.calc_ll_for_single_table()

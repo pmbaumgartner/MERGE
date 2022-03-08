@@ -11,7 +11,7 @@ import pandas as pd
 
 #def print_iterstatus(input_integer,message,interval=10000):
 #    if input_integer%interval==0:
-#        print input_integer,message
+#        print(input_integer,message)
 
 
 class ColumnLists(object):
@@ -53,7 +53,7 @@ class Tables(object):
         
         self.create_df()
         self.tablenum = len(self.all_tables)
-        #print "adding table, tablenum:",self.tablenum
+        #print("adding table, tablenum:",self.tablenum)
         self.all_tables[self.tablenum] = self.df
         self.table_sizes[self.tablenum] = len(self.df)
         

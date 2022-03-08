@@ -32,7 +32,7 @@ class AlreadySeenWords(object):
         try:
             return self._strings_to_lexemes[wordstring]
         except KeyError:
-            print "Warning: word string has not already been seen."
+            print("Warning: word string has not already been seen.")
             
     def is_present(self,wordstring):
         

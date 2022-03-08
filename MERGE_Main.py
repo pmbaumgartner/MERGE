@@ -59,7 +59,7 @@ class ModelRunner(object):
             self.curr_iteration = iteration
             self.log_likelihood_manager.calculate(self.all_tables,self.corpus_size)
             self.winner_info = self.log_likelihood_manager.get_winner()
-            print self.curr_iteration,self.winner_info.winner
+            print(self.curr_iteration,self.winner_info.winner)
             self.merge_token = self.merge(self.winner_info.winner)
             self.merge_tracker[self.curr_iteration] = (self.winner_info.winner,self.winner_info.winner_ll)
             if iteration%100==0:
